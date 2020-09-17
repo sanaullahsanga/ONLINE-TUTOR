@@ -1,0 +1,96 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.constructors.Student.MapsShowAllTutors"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       >
+
+
+    <Spinner
+        android:id="@+id/spinnerCities"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        style="@style/spinner_style"
+        android:theme="@style/spinnerTheme"
+        android:entries="@array/spinnerItemsCities"
+
+        />
+
+        <Spinner
+            android:id="@+id/spinnerClasses"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            style="@style/spinner_style"
+            android:theme="@style/spinnerTheme"
+            android:entries="@array/spinnerClasses"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/relLayout1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            >
+
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/input_search"
+            android:hint="Search Location"
+            android:imeOptions="actionSearch"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:onClick="onClick"
+            android:id="@+id/searchLocation" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</fragment>

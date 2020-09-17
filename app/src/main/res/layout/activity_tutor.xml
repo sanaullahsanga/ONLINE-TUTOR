@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+
+    tools:context="com.constructors.CompleteYourProfile.Tutor">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:padding="20dp"
+        android:background="@drawable/background"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:theme="@style/LoginTextInputLayoutStyle"
+            android:textColorHint="#000"
+           android:textColor="@android:color/black"
+            android:padding="5dp"
+            >
+
+
+            <EditText
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="contact no."
+                android:inputType="number"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@android:color/black"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:theme="@style/LoginTextInputLayoutStyle"
+            android:textColorHint="@android:color/darker_gray"
+            app:boxStrokeColor="#1B1919"
+            android:padding="5dp"
+            >
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="Pakistan, Road str. 10, house. 20"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:text="Set Teaching Hours"
+            android:textColor="@android:color/black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="7"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="Start Time"
+                />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="to"
+            android:textColor="@android:color/black"/>
+
+
+            <EditText
+            android:id="@+id/endtime"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="End Time"
+            />
+
+    </LinearLayout>
+
+
+
+        <Spinner
+            android:id="@+id/spinnerCities"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            style="@style/spinner_style"
+            android:theme="@style/spinnerTheme"
+            android:entries="@array/spinnerItemsCities"
+                       />
+
+        <Spinner
+            android:id="@+id/spinnerQualification"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            style="@style/spinner_style"
+            android:theme="@style/spinnerTheme"
+            android:entries="@array/spinnerItemsQualification"
+
+            />
+
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                style="@style/spinner_style"
+                android:theme="@style/spinnerTheme"
+                android:entries="@array/spinnerItems"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@android:color/black"
+                />
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Your Interested Classes"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@android:color/black"
+            />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Primary (1 - 5)"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle (6 - 8)"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_matriculationScience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matriculation"
+            />
+
+    <LinearLayout
+        android:id="@+id/matricLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/radiogroup_matric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maths"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Physics"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chemistry"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biology"/>
+
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Statistics"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urdu"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Islamiyat"/>
+
+
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_FscPreEngineering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICS"
+            />
+
+    <LinearLayout
+        android:id="@+id/interLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        >
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup_inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maths"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Physics"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Statistics"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urdu"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Islamiyat"/>
+
+
+
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_Fsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FSC"
+            />
+        <LinearLayout
+            android:id="@+id/FscLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+            <RadioGroup
+                android:id="@+id/radiogroup_Fsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maths"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Physics"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chemistry"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biology"/>
+
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statistics"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urdu"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Islamiyat"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_Icom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICOM"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/IcomLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_Icom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accounting"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statistics"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maths"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English"/>
+
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urdu"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Islamiyat"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pakistan Studies"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Business"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_Bachelors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BS Computer Science"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/bachelorsLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_bachelors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/CSbachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OOP"/>
+
+                <CheckBox
+                    android:id="@+id/SEbachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Electronics"/>
+
+                <CheckBox
+                    android:id="@+id/mechanicalbachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculus"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Communication Skills"/>
+
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro. to Computing"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C++"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enterpreneurship"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Professional Issues"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ethical Hacking"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Operating System"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Digital Logic Design"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Database Systems"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artificial Intelligence"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data Science"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Networking"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Internet of Things"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assembly Language"/>
+
+
+
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_BachelorsZolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BS Zology"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/bachelorsZoloLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_bachelorsZolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General Zology"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fundamental Zology"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Physical Fitness"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invertebrate Zology"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analytical Chemistry"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Organic Chemistry"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_BachelorsPsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BS Psycology"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/bachelorsPsyLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_bachelorsPsy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Social Cognition"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group and Leadership"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cultural Psycology"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inter Group Conflict"/>
+
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personality"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Demography"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Environment Behaviour"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Environment Wisdom"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_BachelorsEng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BS English"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/bachelorsEngLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_bachelorsEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro. to English"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English Literature"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro. to Linguistics"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History of English"/>
+
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phonetics"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semantics"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro. to Novel Short Stories"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reasearch Methodology"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_BachelorsMath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BS Mathematics"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/bachelorsMathLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_bachelorsMath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculus"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Differential Equations"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Linear Algebra"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intro. to Modern Algebra"/>
+
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Numerical Analysis"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Programming"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statistics"/>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Complex Analysis"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abstract Calculus"/>
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+                android:id="@+id/btnSave"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_buuton"
+
+                android:text="Save"
+                android:textSize="20sp"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+<!--<CheckBox-->
+<!--android:id="@+id/checkbox_matriculationArts"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Matriculation (9 - 10) Arts"-->
+<!--    />-->
+
+
+<!--<CheckBox-->
+<!--android:id="@+id/checkbox_FscPreMedical"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Fsc Pre-Medical"-->
+<!--    />-->
+
+<!--<CheckBox-->
+<!--android:id="@+id/checkbox_Icom"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Icom"-->
+<!--    />-->
+
+
+
+
+<!--<RadioGroup-->
+<!--    android:id="@+id/radiogroup_inter1"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <RadioButton-->
+<!--        android:id="@+id/icom"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Icom"/>-->
+
+<!--</RadioGroup>-->
+
+
+
+
+
+<!--<RadioButton-->
+<!--android:id="@+id/preEngineeringInter"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Pre-Engineering"/>-->
+
+<!--<RadioButton-->
+<!--android:id="@+id/preMedicalInter"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Pre-Medical"/>-->
+
+<!--<RadioButton-->
+<!--android:id="@+id/icom"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Icom"/>-->
+
+
+<!--<RadioButton-->
+<!--android:id="@+id/scienceMatric"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Science"/>-->
+
+<!--<RadioButton-->
+<!--android:id="@+id/artsMatric"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Arts"/>-->
+
+
+
+
+
+
+

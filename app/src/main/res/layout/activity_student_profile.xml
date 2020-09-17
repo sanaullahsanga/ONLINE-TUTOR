@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    tools:context="com.constructors.Profile.StudentProfile">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.constructors.Profile.StudentProfile"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/stu"/>
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="21sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/email"/>
+            <TextView
+                android:id="@+id/email_profile"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="*"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/studentbtn"/>
+            <EditText
+                android:id="@+id/name_profile"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:hint="Your New Name"                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_save_profile"
+        android:textColor="@android:color/black"
+        android:background="@drawable/custom_buuton"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Save"
+        />
+
+</LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

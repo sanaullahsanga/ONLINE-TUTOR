@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FindTutor</string>
+    <string name="full_name">full name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="confirmPassword">confirmPpassword</string>
+    <string name="register">Register</string>
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_confirmPassword">confirm your password</string>
+    <string name="input_error_unmatchPassword">password mismatch</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">Enter a valid email</string>
+    <string name="input_error_email_invalid_keyword">invalid keyword</string>
+    <string name="facebook_app_id">2155989561113996</string>
+    <string name="fb_login_protocol_scheme">fb2155989561113996</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="reminder_title">AlarmReminder</string>
+    <string name="title_activity_showing_markers_on_map">Map</string>
+    <string name="title_activity_view_location_of_single_masjid">Map</string>
+    <string name="title_activity_maps_show_all_tutors">Map</string>
+
+
+</resources>

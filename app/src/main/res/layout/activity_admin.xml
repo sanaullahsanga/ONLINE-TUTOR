@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.constructors.AdminActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="334dp"
+        android:padding="50dp"
+        android:src="@drawable/admin1" />
+
+    </LinearLayout>
+
+
+
+
+    <!-- Content Container -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/BottomNavigationTheme"
+        android:background="@drawable/white_grey_border_top"
+        app:menu="@menu/bottom_navigation_main"
+        android:backgroundTint="@color/cardview_light_background"
+        />
+
+</RelativeLayout>

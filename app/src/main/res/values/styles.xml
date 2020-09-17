@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="spinnerTheme">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/backgrounddropdown</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="colorAccent">#000</item>
+    </style>
+
+</resources>

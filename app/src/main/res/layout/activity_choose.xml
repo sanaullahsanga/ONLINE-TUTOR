@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    tools:context="com.constructors.RegisterLogin.choose"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="334dp"
+            android:padding="50dp"
+            android:src="@drawable/welcome223" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Select Category"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#691F38"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold" />-->
+<!--        <Button-->
+<!--            android:id="@+id/stud1"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/button_default"-->
+<!--            android:padding="15dp"-->
+<!--            android:text="Register as Student"-->
+<!--            android:textSize="20sp" />-->
+        <Button
+            android:id="@+id/btnCompleteYourProfile"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/newbutton"
+            android:padding="15dp"
+            android:text="Complete your profile"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

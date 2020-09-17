@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f5f8"
+    tools:context="com.constructors.Profile.TutorProfile"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:src="@drawable/tutor"/>
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hassan Saeed"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="21sp"/>
+
+            <Button
+                android:id="@+id/btn_save_profile"
+                android:background="@drawable/button_default"
+                android:backgroundTint="@android:color/white"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:src="@drawable/email"/>
+            <TextView
+                android:id="@+id/email_profile"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Wiliam@gmail.com"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Contact No." />
+
+            <TextView
+                android:id="@+id/contactTV"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="*"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/addressTV"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="*"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Qualification" />
+
+            <TextView
+                android:id="@+id/qualificationTV"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="*"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Experience" />
+
+            <TextView
+                android:id="@+id/experienceTV"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="*"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Selected Classes" />
+
+
+            <ListView
+                android:id="@+id/listviewTutorProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:divider="#CCCCCC"
+                android:dividerHeight="1dp"
+                android:paddingLeft="2dp" >
+            </ListView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+<!--<ScrollView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_gravity="center"-->
+<!--    >-->
+
+<!--</ScrollView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

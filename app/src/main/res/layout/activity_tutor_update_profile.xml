@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    tools:context="com.constructors.CompleteYourProfile.Tutor">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:padding="20dp"
+        android:background="@drawable/background"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:theme="@style/LoginTextInputLayoutStyle"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#FD2B0A15"
+            android:padding="5dp"
+            >
+
+
+            <EditText
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="contact no."
+                android:inputType="number"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@android:color/black"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:theme="@style/LoginTextInputLayoutStyle"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#FD2B0A15"
+            android:padding="5dp"
+            >
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="address"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@android:color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinnerQualification"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            style="@style/spinner_style"
+            android:theme="@style/spinnerTheme"
+            android:entries="@array/spinnerItemsQualification"
+
+            />
+
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            style="@style/spinner_style"
+            android:theme="@style/spinnerTheme"
+            android:entries="@array/spinnerItems"
+
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Your Interested Classes"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FDBE3862"
+            />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Primary (1 - 5)"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle (6 - 8)"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_matriculationScience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matriculation"
+            />
+
+        <LinearLayout
+            android:id="@+id/matricLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/radiogroup_matric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/scienceMatric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Science"/>
+
+                <RadioButton
+                    android:id="@+id/artsMatric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arts"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_FscPreEngineering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intermediate"
+            />
+
+        <LinearLayout
+            android:id="@+id/interLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_inter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/preEngineeringInter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pre-Engineering"/>
+
+                <RadioButton
+                    android:id="@+id/preMedicalInter"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Pre-Medical"/>
+
+                <RadioButton
+                    android:id="@+id/icom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Icom"/>
+
+
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_Bachelors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bachelors"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/bachelorsLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            >
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup_bachelors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/CSbachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BSCS/BSSE"/>
+
+                <RadioButton
+                    android:id="@+id/SEbachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Electrical Engineering"/>
+
+                <RadioButton
+                    android:id="@+id/mechanicalbachelor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical Engineering"/>
+
+
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_buuton"
+
+            android:text="Save"
+            android:textSize="20sp"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/checkbox_matriculationArts"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Matriculation (9 - 10) Arts"-->
+    <!--    />-->
+
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/checkbox_FscPreMedical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Fsc Pre-Medical"-->
+    <!--    />-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/checkbox_Icom"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Icom"-->
+    <!--    />-->
+
+
+
+
+    <!--<RadioGroup-->
+    <!--    android:id="@+id/radiogroup_inter1"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:orientation="horizontal">-->
+
+    <!--    <RadioButton-->
+    <!--        android:id="@+id/icom"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Icom"/>-->
+
+    <!--</RadioGroup>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

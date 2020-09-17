@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>Select Experience</item>
+        <item>No Experience</item>
+        <item>1 Year</item>
+        <item>2 Year</item>
+        <item>3 Year</item>
+        <item>4 Year</item>
+        <item>5 Year</item>
+    </string-array>
+
+    <string-array name="spinnerItemsQualification">
+        <item>Select Qualification</item>
+        <item>Bachelors</item>
+        <item>Masters</item>
+        <item>MPhil</item>
+    </string-array>
+
+    <string-array name="spinnerItemsCities">
+        <item>Select City</item>
+        <item>Faisalabad</item>
+        <item>Jhang</item>
+        <item>Lahore</item>
+        <item>Quetta</item>
+        <item>karachi</item>
+        <item>Peshawar</item>
+        <item>Toba Tek Singh</item>
+        <item>Chichawatni</item>
+        <item>Rawalpindi</item>
+        <item>Multan</item>
+        <item>Gujranwala</item>
+        <item>Pir Mahal</item>
+        <item>Islamabad</item>
+        <item>Hyderabad</item>
+        <item>Murree</item>
+        <item>Abottabad</item>
+        <item>Gilgit</item>
+        <item>Swat</item>
+        <item>Jaranwala</item>
+        <item>Muzaffrabad</item>
+        <item>Faroqabad</item>
+        <item>Haronabad</item>
+        <item>Kalaam</item>
+        <item>Raiwand</item>
+    </string-array>
+
+    <string-array name="spinnerClasses">
+        <item>Select Class</item>
+        <item>primary</item>
+        <item>middle</item>
+        <item>inter</item>
+        <item>matric</item>
+        <item>bachelors</item>
+    </string-array>
+
+</resources>
